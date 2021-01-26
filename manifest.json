@@ -1,0 +1,19 @@
+{
+	"manifest_version": 2,
+	"name": "台州OJ Pornhub化",
+	"version": "1.0.0",
+	"author": "旺财",
+	"description": "台州OJ Pornhub化",
+	"content_scripts": 
+	[
+		{
+			"matches": ["http://tzcoder.cn/acmhome/*"],
+			"js": ["js/javascript.js"],
+			"css": ["css/style.css"],
+			"run_at": "document_idle"
+		}
+	],
+	"permissions": [
+		"tabs", "http://tzcoder.cn/acmhome/*"
+	]
+}
